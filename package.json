@@ -1,0 +1,26 @@
+{
+  "name": "algorithm-analysis",
+  "version": "1.0.0",
+  "description": "Characterizing Running Times, Divide-and-Conquer, Probabilistic Analysis and Randomized Algorithms, Sorting and Order Statistics, Data Structures,Advanced Design and Analysis Techniques and much more about algorithm analysis",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx watch src/server.ts",
+    "build": "tsup src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosVini9999/algorithm-analysis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosVini9999/algorithm-analysis/issues"
+  },
+  "homepage": "https://github.com/MarcosVini9999/algorithm-analysis#readme",
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "tsx": "^3.12.8",
+    "typescript": "^5.2.2"
+  }
+}
