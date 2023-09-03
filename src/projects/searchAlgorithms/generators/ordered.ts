@@ -1,25 +1,22 @@
 export class Ordained {
-  private readonly min: number;
-  private readonly max: number;
   private readonly length: number;
 
-  constructor(min: number, max: number, length: number) {
-    this.min = min;
-    this.max = max;
+  constructor(length: number) {
     this.length = length;
   }
 
   generateSequence(): number[] {
     const sequence: number[] = [];
 
-    const step = (this.max - this.min) / (this.length - 1);
-
     for (let i = 0; i < this.length; i++) {
-      console.log(step);
-      const number = Math.floor(this.min + i * step);
-      sequence.push(number);
+      const randomNumber = i + this.getRandomNumber(2);
+      sequence.push(randomNumber);
     }
 
     return sequence;
+  }
+
+  private getRandomNumber(number: number): number {
+    return Math.floor(Math.random() * (number + 1));
   }
 }
