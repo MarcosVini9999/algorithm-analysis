@@ -12,10 +12,10 @@ public class NaoOrdenado {
 		for (int i = 0; i < 10; i++) {
 			
 			if(cont < 9) {
-				System.out.print(gerador.nextInt(1000) + ",");
+				System.out.print(gerador.nextInt(10) + ",");
 				cont++;
 			}else {
-				System.out.println(gerador.nextInt(1000) + " ");
+				System.out.println(gerador.nextInt(10) + " ");
 				cont=0;
 			}
 				

@@ -9,7 +9,7 @@ public class Ordenado {
 		Random gerador = new Random();
 		
 		int cont =0;
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 10; i++) {
 			
 			if(cont < 9) {
 				System.out.print(i + gerador.nextInt(2) + ",");

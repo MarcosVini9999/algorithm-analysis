@@ -6,9 +6,12 @@ import { QuadraticSearch } from "./projects/searchAlgorithms/quadraticSearch";
 import { TernarySearch } from "./projects/searchAlgorithms/ternarySearch";
 import { measureMemory } from "./projects/modules/measureMemory";
 import { CubicSearch } from "./projects/searchAlgorithms/cubicSearch";
+import { saveFile } from "./projects/modules/saveFile";
 
 const numbers = new Ordained(10);
 const sequence = numbers.generateSequence();
-const sequence2 = new NotOrdained(0, 10, 2000).generateSequence();
+const sequence2 = new NotOrdained(0, 10, 100).generateSequence();
 
-measureMemory(() => new CubicSearch().search(6, sequence2));
+const data = measureMemory(() => new CubicSearch().search(6, sequence2));
+
+saveFile(data, "test");

@@ -1,11 +1,6 @@
-export const measureMemory = async (code: () => any) => {
-  let fullTime = 0;
-  let fullMemory = 0;
-
-  // setInterval(() => {
-  //   console.log(`⏰ Miliseconds: ${averageTime}`);
-  //   console.log(`💾 Bytes: ${averageMemory}`);
-  // }, 1000);
+export const measureMemory = (code: () => any) => {
+  let time = 0;
+  let memory = 0;
 
   const startTime = performance.now();
   const startMemory = process.memoryUsage().heapUsed;
@@ -16,9 +11,11 @@ export const measureMemory = async (code: () => any) => {
   const endMemory = process.memoryUsage().heapUsed;
   const endTime = performance.now();
 
-  fullTime = endTime - startTime;
-  fullMemory = endMemory - startMemory;
+  time = endTime - startTime;
+  memory = endMemory - startMemory;
 
-  console.log(`⏰ Miliseconds: ${fullTime.toFixed(5)}`);
-  console.log(`💾 Bytes: ${fullMemory.toFixed(2)}`);
+  console.log(`⏰ Miliseconds: ${time.toFixed(5)}`);
+  console.log(`💾 Bytes: ${memory.toFixed(2)}`);
+
+  return { time, memory };
 };

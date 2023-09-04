@@ -4,7 +4,7 @@ public class BuscaCubica {
 
 	public static void main(String[] args) {
 
-		int vet[] = { 2, 4, 5, 6, 2, 4, 9, 4, 5, 6 };
+		int vet[] = { 2, 2, 4, 5,  6, 6, 7, 7, 9, 11 };
 		int numeroProcurado = 2;
 		int posicao = -1;
 
