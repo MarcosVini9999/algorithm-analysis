@@ -1,4 +1,4 @@
-export class SequentialSearchV1 {
+export class SequentialSearch {
   private readonly sequence: number[];
 
   constructor(sequence: number[]) {
@@ -13,5 +13,13 @@ export class SequentialSearchV1 {
     }
 
     return indice;
+  }
+
+  search2(number: number) {
+    for (let i = 0; i < this.sequence.length; i++) {
+      if (this.sequence[i] == number) return i;
+    }
+
+    return -1;
   }
 }

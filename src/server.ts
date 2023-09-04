@@ -1,6 +1,6 @@
 import { NotOrdained } from "./projects/searchAlgorithms/generators/notOrdained";
 import { Ordained } from "./projects/searchAlgorithms/generators/ordered";
-import { SequentialSearchV1 } from "./projects/searchAlgorithms/sequentialSearch";
+import { SequentialSearch } from "./projects/searchAlgorithms/sequentialSearch";
 import { BinarySearch } from "./projects/searchAlgorithms/binarySearch";
 import { QuadraticSearch } from "./projects/searchAlgorithms/quadraticSearch";
 import { TernarySearch } from "./projects/searchAlgorithms/ternarySearch";
