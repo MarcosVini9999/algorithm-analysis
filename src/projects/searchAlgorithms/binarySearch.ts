@@ -1,4 +1,4 @@
-export class binarySearch {
+export class BinarySearch {
   constructor() {}
 
   search(number: number, sequence: number[], start: number, end: number): number {
