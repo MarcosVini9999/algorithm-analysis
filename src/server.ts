@@ -7,23 +7,31 @@ import { TernarySearch } from "./projects/searchAlgorithms/ternarySearch";
 import { CubicSearch } from "./projects/searchAlgorithms/cubicSearch";
 import { measureMemory } from "./projects/modules/measureMemory";
 import { saveFile } from "./projects/modules/saveFile";
+import { maxVal } from "./projects/maxVal/maxVal";
 
-// const sequence = new Ordained(10).generateSequence();
-// const sequence2 = new NotOrdained(0, 10, 100).generateSequence();
+// const sequence = new NotOrdained(0, 10, 100).generateSequence();
+// const sequenceSizes = [
+//   100, 200, 1000, 2000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000, 10000000, 100000000,
+// ];
+const sequenceSizes = [
+  100, 200, 1000, 2000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000, 10000000, 100000000,
+];
 
-// const sequenceSizes = [100, 200, 1000, 2000, 5000];
+sequenceSizes.map((size) => {
+  const sequence = new NotOrdained(0, size, size).generateSequence();
 
-// sequenceSizes.map((size) => {
-//   const sequence = new Ordained(size).generateSequence();
+  const maxValueSequencial = measureMemory(() => new maxVal(sequence).search());
 
-//   const dataSequentialSearch = measureMemory(() => new SequentialSearch(sequence).search(5));
+  saveFile(maxValueSequencial, `MaxValue Sequential NotOrdained ${size}`);
 
-//   saveFile(dataSequentialSearch, `SequentialSearchV1 ${size}`);
+  const maxValueRecursive = measureMemory(() =>
+    new maxVal(sequence).searchRecursive(0, sequence.length - 1)
+  );
 
-//   const data2SequentialSearch = measureMemory(() => new SequentialSearch(sequence).search2(5));
+  saveFile(maxValueRecursive, `MaxValue Recursive NotOrdained ${size}`);
+});
 
-//   saveFile(data2SequentialSearch, `SequentialSearchV2 ${size}`);
-// });
+console.log("🟥FINISH");
 
 // sequenceSizes.map((size) => {
 //   const sequence = new NotOrdained(0, size, size).generateSequence();

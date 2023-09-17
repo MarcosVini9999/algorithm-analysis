@@ -158,6 +158,84 @@
     { "title": "CubicSearch NotOrdained 200", "time": 7.379799962043762, "memory": 1024 },
     { "title": "CubicSearch NotOrdained 1000", "time": 510.4792000055313, "memory": 992 },
     { "title": "CubicSearch NotOrdained 2000", "time": 4109.391000032425, "memory": 1120 },
-    { "title": "CubicSearch NotOrdained 5000", "time": 68009.57939994335, "memory": 1040 }
+    { "title": "CubicSearch NotOrdained 5000", "time": 68009.57939994335, "memory": 1040 },
+    { "title": "MaxValue Sequential NotOrdained 100", "time": 2.5026999711990356, "memory": 27368 },
+    { "title": "MaxValue Recursive NotOrdained 100", "time": 0.2160000205039978, "memory": 1504 },
+    { "title": "MaxValue Sequential NotOrdained 200", "time": 0.10870003700256348, "memory": 1288 },
+    { "title": "MaxValue Recursive NotOrdained 200", "time": 0.14010000228881836, "memory": 2016 },
+    { "title": "MaxValue Sequential NotOrdained 1000", "time": 0.2149999737739563, "memory": 1352 },
+    { "title": "MaxValue Recursive NotOrdained 1000", "time": 0.2451000213623047, "memory": 7648 },
+    { "title": "MaxValue Sequential NotOrdained 2000", "time": 0.2193000316619873, "memory": 1336 },
+    { "title": "MaxValue Recursive NotOrdained 2000", "time": 0.3708000183105469, "memory": 13904 },
+    { "title": "MaxValue Sequential NotOrdained 5000", "time": 1.3212000131607056, "memory": 1376 },
+    { "title": "MaxValue Recursive NotOrdained 5000", "time": 1.2193000316619873, "memory": 13168 },
+    {
+      "title": "MaxValue Sequential NotOrdained 10000",
+      "time": 1.2240000367164612,
+      "memory": 1272
+    },
+    {
+      "title": "MaxValue Recursive NotOrdained 10000",
+      "time": 0.29729998111724854,
+      "memory": 1120
+    },
+    {
+      "title": "MaxValue Sequential NotOrdained 50000",
+      "time": 0.20029997825622559,
+      "memory": 1272
+    },
+    { "title": "MaxValue Recursive NotOrdained 50000", "time": 0.9028000235557556, "memory": 1120 },
+    {
+      "title": "MaxValue Sequential NotOrdained 100000",
+      "time": 0.26579999923706055,
+      "memory": 1272
+    },
+    {
+      "title": "MaxValue Recursive NotOrdained 100000",
+      "time": 1.5270000100135803,
+      "memory": 1120
+    },
+    {
+      "title": "MaxValue Sequential NotOrdained 500000",
+      "time": 0.7387999892234802,
+      "memory": 1272
+    },
+    { "title": "MaxValue Recursive NotOrdained 500000", "time": 6.466499984264374, "memory": 1120 },
+    {
+      "title": "MaxValue Sequential NotOrdained 1000000",
+      "time": 1.8985999822616577,
+      "memory": 7032
+    },
+    {
+      "title": "MaxValue Recursive NotOrdained 1000000",
+      "time": 13.655100047588348,
+      "memory": 1120
+    },
+    {
+      "title": "MaxValue Sequential NotOrdained 5000000",
+      "time": 4.057500004768372,
+      "memory": 7320
+    },
+    { "title": "MaxValue Recursive NotOrdained 5000000", "time": 65.0430999994278, "memory": 1120 },
+    {
+      "title": "MaxValue Sequential NotOrdained 10000000",
+      "time": 6.608000040054321,
+      "memory": 7272
+    },
+    {
+      "title": "MaxValue Recursive NotOrdained 10000000",
+      "time": 130.40349996089935,
+      "memory": 1120
+    },
+    {
+      "title": "MaxValue Sequential NotOrdained 100000000",
+      "time": 66.40770000219345,
+      "memory": 7224
+    },
+    {
+      "title": "MaxValue Recursive NotOrdained 100000000",
+      "time": 1371.3666999936104,
+      "memory": 1120
+    }
   ]
 }
